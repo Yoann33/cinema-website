@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.ABC img {
+    position: absolute;
+    display: block;
+    width: 100px;
+    margin: 5px 50px;
+}
+
+.topBar {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 3px 5px rgb(187, 187, 187);
+}
+
+@media (min-width: 770px) {
+    .topBar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ABC img {
+        position: static;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .topBar {
+        height: 150px;
+        align-items: start;
+    }
+}

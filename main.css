@@ -1,0 +1,89 @@
+:root {
+    --colNumber: 1;
+    --colGap: 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main h1 {
+    margin: 25px 0px;
+    font-size: 1rem;
+}
+
+.movieSet {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(var(--colNumber),1fr);
+    column-gap: var(--colGap);
+    row-gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie {
+    width: 150px;
+}
+
+.movie img {
+    width: 100%;
+    height: 200px
+}
+
+.movie p {
+    padding-top: 10px;
+    font-stretch: condensed;
+    color: rgb(0, 0, 185);
+}
+
+@media (min-width: 350px) {
+    :root {
+        --colNumber: 2;
+    }
+}
+
+@media (min-width: 600px) {
+    :root {
+        --colNumber: 3;
+    }
+}
+
+@media (min-width: 770px) {    
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .movie {
+        width: 200px;
+    }
+
+    .movie img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    :root {
+        --colGap: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --colNumber: 4;
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --colNumber: 5;
+    }
+}

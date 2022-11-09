@@ -1,0 +1,51 @@
+.carousselContainer {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.caroussel {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    animation: slide 15s infinite;
+    z-index: 0;
+}
+
+.caroussel picture img, .caroussel picture {
+    width: 100vw;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0vw);
+    }
+    28% {
+        transform: translateX(0vw);
+    }
+    33% {
+        transform: translateX(-100vw);
+    }
+    61% {
+        transform: translateX(-100vw);
+    }
+    66% {
+        transform: translateX(-200vw);
+    }
+    94% {
+        transform: translateX(-200vw);
+    }
+    99% {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousselContainer {
+        margin-top: 150px;
+    }
+}

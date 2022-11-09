@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema ABC</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sail.css">
+    <link rel="stylesheet" href="caroussel.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="topBar">
+        <a class="ABC" href=""><img src="img/logos/ABC.png" alt="logo cinema"></a>
+        <input type="checkbox" id="sail" name="sail">
+        <label for="sail">
+            <svg class="icon menu">
+                <use xlink:href="img/sprites/menu.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="sail">
+            <div class="headerSail">
+                <h1>MENU</h1>
+                <svg class="icon cross">
+                    <use xlink:href="img/sprites/cross.svg#cross"></use>
+                </svg>
+            </div>
+            <ul class="links">
+                <li>
+                    <h3>
+                        <a href="">
+                            <svg class="logos">
+                                <use xlink:href="img/sprites/sprite-logo.svg#search"></use>
+                            </svg>
+                            SEARCH
+                        </a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="">
+                            <svg class="logos">
+                                <use xlink:href="img/sprites/sprite-logo.svg#account"></use>
+                            </svg>ACCOUNT</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="">
+                            <svg class="logos">
+                                <use xlink:href="img/sprites/sprite-logo.svg#news"></use>
+                            </svg>
+                            NEWS
+                        </a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="">
+                            <svg class="logos">
+                                <use xlink:href="img/sprites/sprite-logo.svg#recruitment"></use>
+                            </svg>
+                            RECRUITMENT
+                        </a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="">
+                            <svg class="logos">
+                                <use xlink:href="img/sprites/sprite-logo.svg#work-space"></use>
+                            </svg>
+                            WORK-SPACE
+                        </a>
+                    </h3>
+                </li>
+            </ul>
+            <ul class="socials">
+                <li>
+                    <a href="">
+                        <svg class="social">
+                            <use xlink:href="img/sprites/sprite-social.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="social">
+                            <use xlink:href="img/sprites/sprite-social.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="social">
+                            <use xlink:href="img/sprites/sprite-social.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="social">
+                            <use xlink:href="img/sprites/sprite-social.svg#tiktok"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="carousselContainer">
+        <div class="caroussel">
+            <picture>
+                <source media="(max-width: 770px)" srcset="img/caroussel-little-version/sunny-field.jpg">
+                <img src="img/caroussel-large-version/sunny-field.jpg">
+            </picture>
+            <picture>
+                <source media="(max-width: 770px)" srcset="img/caroussel-little-version/sky-mountain.jpg">
+                <img src="img/caroussel-large-version/sky-mountain.jpg">
+            </picture>
+            <picture>
+                <source media="(max-width: 770px)" srcset="img/caroussel-little-version/sky-trek.jpg">
+                <img src="img/caroussel-large-version/sky-trek.jpg">
+            </picture>
+        </div>
+    </div>
+    <main class="main">
+        <h1>À L'AFFICHE</h1>
+        <div class="movieSet">
+            <div class="movie">
+                <img src="img/forest-driving.jpg" alt="">
+                <p>FOREST DRIVING</p>
+            </div>
+            <div class="movie">
+                <img src="img/haunted-lake.jpg" alt="">
+                <p>HAUNTED LAKE</p>
+            </div>
+            <div class="movie">
+                <img src="img/last-sunset.jpg" alt="">
+                <p>LAST SUNSET</p>
+            </div>
+            <div class="movie">
+                <img src="img/little-leaf.jpg" alt="">
+                <p>LITTLE LEAF</p>
+            </div>
+            <div class="movie">
+                <img src="img/lost-island.jpg" alt="">
+                <p>LOST ISLAND</p>
+            </div>
+            <div class="movie">
+                <img src="img/mysterious-waterfall.jpg" alt="">
+                <p>MYSTERIOUS WATERFALL</p>
+            </div>
+            <div class="movie">
+                <img src="img/twilight-adventure.jpg" alt="">
+                <p>TWILIGHT ADVENTURE</p>
+            </div>
+            <div class="movie">
+                <img src="img/woods-trap.jpg" alt="">
+                <p>WOODS TRAP</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h3>VOUS AIMEZ CE SITE VITRINE?</h3><h3>CONTACTEZ MOI!</h3>
+        <div class="contact">
+            <div class="container">
+                <ul class="infos">
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="img/contact/sprite-contact.svg#phone"></use>
+                          </svg>
+                        07 70 46 72 75
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="img/contact/sprite-contact.svg#home"></use>
+                          </svg>
+                        05 33 05 13 88
+                    </li>
+                    <li class="mail">
+                        <svg class="icon">
+                            <use xlink:href="img/contact/sprite-contact.svg#mail"></use>
+                          </svg>
+                        ricquebourg.yoann@gmail.com
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li>
+                        <a href="/index.html">
+                            <svg class="icon">
+                                <use xlink:href="img/contact/sprite-contact.svg#internet"></use>
+                            </svg>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index.html">
+                            <svg class="icon">
+                                <use xlink:href="img/contact/sprite-contact.svg#file"></use>
+                              </svg>
+                            CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
